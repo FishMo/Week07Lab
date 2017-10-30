@@ -17,3 +17,11 @@ CREATE TABLE User(
 );
 
 INSERT INTO User values('admin', 'password', 'test@test.com', 1, 'Bob', 'Bobberson');
+
+
+CREATE TABLE Note(
+    noteId          Int NOT NULL,
+    dateCreated     DATE NOT NULL FORMAT 'YYYY-MM-DD' DEFAULT DATE '2017-10-30'),
+    contents        NVARCHAR(10000) NOT NULL,
+    PRIMARY KEY     (noteId)
+);
